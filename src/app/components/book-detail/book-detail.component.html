@@ -1,0 +1,12 @@
+<mat-card *ngIf="book">
+    <mat-card-title>{{ book.title }}</mat-card-title>
+    <mat-card-subtitle>{{ book.author }}</mat-card-subtitle>
+    <mat-card-content>
+      <p><strong>Published Date:</strong> {{ book.publishedDate | date }}</p>
+      <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="editBook()">Edit</button>
+      <button mat-raised-button color="warn" (click)="deleteBook()">Delete</button>
+    </mat-card-actions>
+  </mat-card>

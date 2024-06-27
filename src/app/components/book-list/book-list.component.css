@@ -1,0 +1,11 @@
+mat-card {
+    margin-top: 20px;
+  }
+  
+  mat-list-item {
+    cursor: pointer;
+  }
+  
+  mat-list-item:hover {
+    background-color: #f0f0f0;
+  }

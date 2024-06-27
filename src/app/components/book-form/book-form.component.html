@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Book Form</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Author</mat-label>
+        <input matInput formControlName="author" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Published Date</mat-label>
+        <input matInput formControlName="publishedDate" type="date" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>ISBN</mat-label>
+        <input matInput formControlName="isbn" required>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Save</button>
+    </form>
+  </mat-card-content>
+</mat-card>
